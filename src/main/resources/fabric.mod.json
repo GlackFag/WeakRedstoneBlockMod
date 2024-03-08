@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "weak_redstone_block",
+	"version": "${version}",
+	"name": "weak_redstone_block",
+	"description": "This Minecraft mod introduces a new redstone block made of four dust particles, with a signal power of 1",
+	"authors": [
+		"GlackFag"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/weak_redstone_block/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.glackfag.weak_redstone_block.Weak_redstone_block"
+		],
+		"client": [
+			"com.glackfag.weak_redstone_block.Weak_redstone_blockClient"
+		]
+	},
+	"mixins": [
+		"weak_redstone_block.mixins.json",
+		{
+			"config": "weak_redstone_block.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

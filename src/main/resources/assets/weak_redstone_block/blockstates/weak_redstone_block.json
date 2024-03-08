@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": {
+      "model": "weak_redstone_block:block/weak_redstone_block"
+    }
+  }
+}
+
